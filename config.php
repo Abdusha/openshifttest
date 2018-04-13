@@ -7,10 +7,10 @@
 	$dbname = getenv("databasename");
 
 	$conn = mysqli_connect($dbhost, $dbserver, $dbuname)
-	if (!$conn) {
-		die("gagal connect")
+	if ($conn) {
+		echo "Berhasil Connect";
 	}
 	else{
-		echo "Berhasil connect";
+		echo "hmmm";
 	}
 ?>
