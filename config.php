@@ -6,7 +6,7 @@
 	$dbpass = getenv("databasepass");
 	$dbname = getenv("databasename");
 
-	$conn = mysqli_connect($dbhost, $dbserver, $dbuname)
+	$conn = mysqli_connect($dbhost, $dbserver, $dbuname, $dbpass);
 	if ($conn) {
 		echo "Berhasil Connect";
 	}
